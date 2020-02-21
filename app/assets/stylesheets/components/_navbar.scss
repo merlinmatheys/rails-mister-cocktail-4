@@ -1,0 +1,19 @@
+.navbar-global {
+  // position: fixed;
+  color: white;
+}
+
+.navbar-lewagon {
+  justify-content: space-between;
+  opacity: 0.8;
+  background-color: white;
+}
+
+.navbar-lewagon .navbar-collapse {
+  flex-grow: 0;
+}
+
+.navbar-lewagon .navbar-brand img {
+  width: 40px;
+}
+
