@@ -7,27 +7,11 @@
 </div>
 
 
-<body>
-  <div class="py-5">
-    <div class="container">
-      <div class="row hidden-md-up">
-        <div class="col-md-4">
-          <% @cocktails.each do |cocktail| %>
-          <div class="card">
-            <div class="card-block">
-              <h4 class="card-title"><%= cocktail.name %></h4>
-              <h6 class="card-subtitle text-muted">*****</h6>
-              <p class="card-text p-y-1"></p>
-              <a href="#" class="card-link"></a>
-              <%= link_to 'View details of this cocktail', cocktail_path(cocktail) %>
-              <% end %>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
+
+<div class="cards">
+    <% @cocktails.each do |cocktail| %>
+  <div class="card" style="background-image: url(https://www.gall.nl/dw/image/v2/BCLJ_PRD/on/demandware.static/-/Sites-gall-storefront-catalog/default/dw60b345e8/tequila%20sunrise%20header.jpg?sw=600)">
+      <%= link_to cocktail.name, cocktail_path(cocktail) %>
   </div>
-  <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js"></script>
-  <script src="https://pingendo.com/assets/bootstrap/bootstrap-4.0.0-alpha.6.min.js"></script>
-</body>
+    <% end %>
+</div>
