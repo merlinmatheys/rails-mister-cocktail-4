@@ -1,0 +1,2 @@
+module CoctailsControllerHelper
+end
